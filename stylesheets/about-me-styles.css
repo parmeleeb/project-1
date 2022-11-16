@@ -1,24 +1,36 @@
 
+/*  style by tag */
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: url("../images/ACNH-island.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(164, 234, 246);
 }
 
 header {
     background-color: rgb(164, 234, 246);
     text-align: center;
-    border: 2px solid rgb(50,122,147);
+    border: 3px solid rgb(50,122,147);
+    border-radius: 55px;
+    border-collapse: collapse;
+}
 
+h2{
+    text-align: center;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-bottom: 2px solid rgb(50,122,147);
+    border-bottom: 3px solid rgb(50,122,147);
     padding: 10px;
     background-color: rgb(241, 173, 136);
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    margin: 0px;
+    /* Why can't I GET RID OF THAT SPACE */
 }
 
 @media (max-width: 420px){
@@ -27,10 +39,11 @@ nav {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        border-bottom: 2px solid rgb(50,122,147);
+        border: 2px solid rgb(50,122,147);
         padding: 10px;
         background-color: rgb(241, 173, 136);
-        
+        border-top-left-radius: 55px;
+        border-top-right-radius: 55px;
     }
 }
 
@@ -43,7 +56,8 @@ nav a {
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
-    margin: 1em;
+    margin: 0.2em 1em;
+    border-radius: 20px;
 }
 
 nav a:hover {
@@ -55,11 +69,47 @@ img {
     border: 5px solid black;
 }
 
+/* style by class */
+
+.grid {
+    margin: 0% 5%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    justify-content: space-between;
+}
+
+table tbody tr td{
+    grid-column: span 1;
+    padding: 1em;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(50,122,147);
+}
+
+.table-heading {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(241, 173, 136, .5)
+}
+
+.wide {
+    grid-column: span 4;
+}
+
 .me-img {
     float: left;
     margin: 50px;
 }
 
+/* style by ID */
+
 #journey-table {
-    border: 2px solid black;
+    background-color: rgb(164, 234, 246, .5);
+    border: 3px solid rgb(50,122,147);
+    border-collapse: collapse;
+    margin: 20px 5%;
 }
