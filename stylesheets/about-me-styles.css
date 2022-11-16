@@ -13,9 +13,25 @@ header {
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     border-bottom: 2px solid rgb(50,122,147);
     padding: 10px;
     background-color: rgb(241, 173, 136);
+}
+
+@media (max-width: 420px){
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-bottom: 2px solid rgb(50,122,147);
+        padding: 10px;
+        background-color: rgb(241, 173, 136);
+        
+    }
 }
 
 nav a {
@@ -24,10 +40,10 @@ nav a {
     border-style: solid;
     border-color: rgb(50,122,147);
     color: black;
-    padding: 3px;
-    margin: 0px 15px;
+    padding: 1em;
     font-weight: bold;
     text-decoration: none;
+    margin: 1em;
 }
 
 nav a:hover {
