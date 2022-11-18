@@ -4,6 +4,10 @@
 /* ---------------------------------------------------- */
 /*          Organized by SCOPE / page ORDER             */
 /* ---------------------------------------------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -19,7 +23,8 @@ header {
     border: 3px solid rgb(50,122,147);
     border-radius: 55px;
     border-collapse: collapse;
-    margin: 0px 5%;
+    margin: 1em 5%;
+    padding-bottom: 1em;
 }
 
 nav {
@@ -52,11 +57,32 @@ nav a:hover {
 }
 
 main {
-    border: 5px solid black;
+    background-color: rgba(255, 255, 255, 0);
 }
 
-h2{
+h2 {
     text-align: center;
+    margin: 2em;
+    grid-column: span 3;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    background-color: rgb(132,140,177);
+    height: 5em;
+    border: 5px solid rgb(50,122,147);
+    margin-top: 100px;
 }
 
 /* ---------------------------------------------------- */
@@ -64,6 +90,39 @@ h2{
 /* ---------------------------------------------------- */
 /*               Organized ALPHABETICAL                 */
 /* ---------------------------------------------------- */
+
+.flex-box {
+    display: flex;
+    justify-items: center;
+    grid-column: span 2;
+    flex-wrap: wrap;
+    margin-left: 2%;
+}
+
+.flex-box section {
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+}
+
+.flex-box section img {
+    height: 15em;
+    border: 5px solid black;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.flex-box section img:hover {
+    transition: 0.6s;
+    height: 50%;
+    position: absolute;
+}
+
+.flex-box section div {
+    font-weight: bold;
+}
 
 .table-heading {
     font-size: 20px;
@@ -81,18 +140,25 @@ h2{
 /* index.html */
 /* ---------- */
 
-#me-img {
-    width: 500px;
-    border: 5px solid black;
-    padding: 0px;
-    float: left;
-    margin: 50px;
-    border-collapse: collapse;
+#home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#me-img:hover {
-    transition: 0.6s;
-    width: 600px;
+#home aside {
+    background-color: rgb(113,186,140);
+    border-top-left-radius: 55px;
+    border-bottom-left-radius: 55px;
+    border-left: 5px solid rgb(50,122,147);
+    border-top: 5px solid rgb(50,122,147);
+    border-bottom: 5px solid rgb(50,122,147);
+    padding: 1em 20%;
+    font-size: 30px;
+    margin-bottom: auto;
+}
+
+#home aside ul li {
+    margin: 1em;
 }
 
 /* --------------- */
