@@ -78,11 +78,19 @@ h5 {
 
 footer {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: rgb(132,140,177);
+    color: rgb(0, 0, 0, 0);
     height: 5em;
     border: 5px solid rgb(50,122,147);
     margin-top: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+footer img {
+    height: 72px;
+    float: bottom;
 }
 
 /* ---------------------------------------------------- */
@@ -122,6 +130,14 @@ footer {
 
 .flex-box section div {
     font-weight: bold;
+}
+
+.footer-logo {
+    border-radius: 50%;
+}
+
+.footer-logo:hover {
+    border-radius: 25%;
 }
 
 .table-heading {
