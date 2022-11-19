@@ -90,7 +90,6 @@ footer {
 
 footer img {
     height: 72px;
-    float: bottom;
 }
 
 /* ---------------------------------------------------- */
@@ -133,17 +132,12 @@ footer img {
 }
 
 .footer-logo {
+    border: 3px solid rgb(50,122,147);
     border-radius: 50%;
 }
 
 .footer-logo:hover {
     border-radius: 25%;
-}
-
-.table-heading {
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgb(241, 173, 136, .5)
 }
 
 /* ---------------------------------------------------- */
@@ -188,11 +182,26 @@ footer img {
     margin: 20px 5%;
 }
 
-#journey-table tbody tr td{
-    padding: 1em;
+#journey-table thead {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(241, 173, 136, .5)
+}
+
+#journey-table tbody tr {
+    height: 300px;
+}
+
+#journey-table tbody tr td {
+    padding: 0px 1em;
     text-align: center;
     font-size: 18px;
     justify-content: center;
     align-items: center;
     border: 3px solid rgb(50,122,147);
+}
+
+#journey-table tbody tr td img {
+    max-height: 280px;
+    max-width: 280px;
 }
