@@ -114,11 +114,8 @@ footer img {
 
 .flex-box section img {
     height: 15em;
-    border: 5px solid black;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+    border-radius: 25px;
+    border: 5px solid rgb(50,122,147);
 }
 
 .flex-box section img:hover {
@@ -138,6 +135,49 @@ footer img {
 
 .footer-logo:hover {
     border-radius: 25%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0% 5%;
+}
+
+.grid section {
+    background-color: rgb(90,208,184, 0.65);
+    border: 3px solid rgb(50,122,147);
+    min-height: 500px;
+    border-radius: 63px;
+}
+
+.grid section heading {
+    display: block;
+    text-align: center;
+    padding: 40px 0%;
+    background-color: rgb(1,128,119);
+    border-radius: 55px;
+    border: 3px solid rgb(50,122,147);
+}
+
+.grid section article {
+    padding: 0% 2% 40px 2%; 
+}
+
+.grid section article img {
+    max-height: 200px;
+    float: left;
+    border: 3px solid rgb(50,122,147);
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.grid section article div {
+    padding-top: 1em;
+    font-size: 20px;
+}
+
+.table-year {
+    font-weight: bold;
 }
 
 /* ---------------------------------------------------- */
@@ -176,7 +216,6 @@ footer img {
 /* --------------- */
 
 #journey-table {
-    background-color: rgb(164, 234, 246, .5);
     border: 3px solid rgb(50,122,147);
     border-collapse: collapse;
     margin: 20px 5%;
@@ -185,7 +224,11 @@ footer img {
 #journey-table thead {
     font-size: 20px;
     font-weight: bold;
-    background-color: rgb(241, 173, 136, .5)
+    background-color: rgb(236, 113, 116)
+}
+
+#journey-table tbody {
+    background-color: rgb(169, 215, 169, .65);
 }
 
 #journey-table tbody tr {
@@ -195,13 +238,16 @@ footer img {
 #journey-table tbody tr td {
     padding: 0px 1em;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     justify-content: center;
     align-items: center;
     border: 3px solid rgb(50,122,147);
 }
 
 #journey-table tbody tr td img {
+    border-radius: 25px;
     max-height: 280px;
     max-width: 280px;
+    border: 3px solid rgb(50,122,147);
+
 }
