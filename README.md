@@ -1,5 +1,5 @@
 # project-1
-My first project woth HTML and CSS.
+My first project with HTML and CSS.
 
 The project required three pages each with their own requirements. 
 -------------------------------------------------------------------------------------
